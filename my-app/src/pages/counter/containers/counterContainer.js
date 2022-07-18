@@ -7,7 +7,7 @@ class CounterContainer extends PureComponent {
     super();
     this.state = {
       countValue: 0,
-      isEven: true
+      isEven: true,
     };
   }
   countEven = (num) => num % 2 === 0;
@@ -17,29 +17,30 @@ class CounterContainer extends PureComponent {
       const incrementedValue = state.countValue + 1;
       return {
         countValue: incrementedValue,
-        isEven:this.countEven(incrementedValue)
+        isEven: this.countEven(incrementedValue),
       };
     });
   };
   handleReset = () => {
-    this.setState({ countValue: 0, isEven: true});
+    this.setState({ countValue: 0, isEven: true });
   };
 
-  handleDecrement =()=> {
-    this.setState((state)=>{
-      const decrementedValue= state.countValue>0? state.countValue -1: 0;
-      return{
-        countValue:decrementedValue,
-        isEven:this.countEven(decrementedValue)
-      }
+  handleDecrement = () => {
+    if (this.state.countValue > 0) {
+      this.setState((state) => {
+        const decrementedValue = state.countValue - 1;
+        return {
+          countValue: decrementedValue,
+          isEven: this.countEven(decrementedValue),
+        };
+      });
     }
-    )
-  }
+  };
   render() {
     return (
       <Counter
         countValue={this.state.countValue}
-        isEven= {this.state.isEven}
+        isEven={this.state.isEven}
         onReset={this.handleReset}
         onDecrement={this.handleDecrement}
         onIncrement={this.handleIncrement}
