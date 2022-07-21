@@ -1,0 +1,45 @@
+.wrapper{
+   max-width: 50%;
+   padding: 30px;
+   border: 2px solid black;
+   border-radius: 10px;
+}
+
+.screen{
+   max-width: 10%;
+   padding: 10px;
+   margin: 0 auto 25px;
+   text-align: center;
+   border: 2px solid black;
+   border-radius: 10%;
+
+}
+
+.buttonsArea{
+   width: max-content;
+   margin: 0 auto;
+
+}
+
+.controlButton{
+   width: 50px;
+   height: 50px;
+   margin-right: 10px;
+   border: 1px solid black;
+   border-radius: 10%;
+   background-color: rgb(203, 237, 237);
+   cursor: pointer;
+   transition: 0.3s; 
+   
+}
+.controlButton:hover{
+   background-color:rgb(240, 216, 208)
+}
+
+.evenColor{
+   background-color: aquamarine;
+}
+
+.oddColor{
+   background-color: pink;
+}
