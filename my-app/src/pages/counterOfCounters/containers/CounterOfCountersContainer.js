@@ -19,7 +19,6 @@ const CounterOfCountersContainer = () => {
           countValue: counter.countValue % 2 === 0 ?counter.countValue + 1 : counter.countValue,
         };
       });
-      console.log('ghjk');
       return [...changeValueCounter, newCounter];
     });
   };
@@ -33,7 +32,6 @@ const CounterOfCountersContainer = () => {
       const countersCopy = [...state];
       const findCounter = countersCopy.find(counter => counter.id === id);
       findCounter.countValue += 1;
-      console.log('123');
       return countersCopy;
     });
   }, []);
