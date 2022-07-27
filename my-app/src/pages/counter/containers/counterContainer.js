@@ -1,6 +1,6 @@
 import React, { PureComponent } from "react";
 
-import Counter from "../components/counter";
+import Counter from "../../../components/counter";
 
 class CounterContainer extends PureComponent {
   constructor() {

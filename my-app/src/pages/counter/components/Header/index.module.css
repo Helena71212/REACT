@@ -1,0 +1,11 @@
+.menuItem{
+   border: 2px solid black;
+   margin-right: 10px;
+   text-decoration: none;
+   padding: 10px;
+   display: inline-block;
+}
+
+   .menuItem:last-of-type{
+      margin-right: 0;
+   }
