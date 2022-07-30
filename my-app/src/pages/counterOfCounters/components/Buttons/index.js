@@ -39,8 +39,8 @@ const MainCounter = ({
       </div>
 
       <div>
-        <h4>Number of counters:{counters.length}</h4>
-        <h4>Sum of value of all counters:{sumOfCounters}</h4>
+        <h3>Number of counters:{counters.length}</h3>
+        <h3>Sum of value of all counters:{sumOfCounters}</h3>
       </div>
     </div>
   );
